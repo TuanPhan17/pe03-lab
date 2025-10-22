@@ -2,8 +2,8 @@
 print("Choose a program to run:")
 print("1. People list")
 print("2. Animal list ")
-print("3. ")
-print("4. ")
+print("3. Duplicate list")
+print("4. Food tuple")
 print("5. ")
 
 choice = int(input("Enter your choice (1-5): "))
@@ -45,5 +45,46 @@ elif choice == 2:
     print("Three animals from the middle of the list are:", animals[middle_index-1:middle_index+2]) #Slices 3 items centered in the middle
 
     print("The last three animals in the list are:", animals[-3:]) #Print last 3 animals
+
+elif choice == 3:
+    #---duplicate-list---
+#Start with a list of numbers that have duplicates
+#Make an empty list to hold numbers that appear more than once 
+#Go thru each number in list one by one 
+#For each number count how many times it apears in original list 
+#If number appears more than once and not in duplicate list , add it 
+#once its done print the duplicate list
+
+    numbers = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+
+    duplicates = [] #Empty list to store duplicates 
+
+    for num in numbers: #Go through each number in list 
+        if numbers.count(num) > 1 and num not in duplicates: #Check if it appears more than once and isn't added
+            duplicates.append(num) #Add to duplicates
+
+    print("Duplicate numbers:", duplicates)
+
+elif choice == 4:
+
+    foods = ("spring rolls", "chicken feet", "beef", "soup", "fried rice") #Foods in a tuple
+    print("Menu:")  # print header once
+    for food in foods: #For loop to print each food one by one 
+        print(food)
+
+    #foods[0] = "egg rolls" #trying to replace item but you cant replace in tuple
+    #print(food) #there is an error in the terminal 
+
+    foods = ("egg rolls", "chicken feet", "beef", "soup", "noodles") #new tuple w/ 2 different foods 
+    print("\nRevised menu:")  # print header once again
+    for food in foods: #For loop printing new foods one by one
+        print(food)
+
+
+
+
+
+
+
 
     pass

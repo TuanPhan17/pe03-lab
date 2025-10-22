@@ -1,5 +1,6 @@
 # PE03 Lab – Lists and Tuples
 **Author:** Tuan Phan  
+**School:** City University of Seattle  
 **Course:** IS201 – Fundamentals of Computing  
 
 ---
@@ -19,8 +20,21 @@ Creates a list of animals and uses **slicing** to print the first three, middle 
 
 ---
 
+## 3️⃣ Duplicate List
+Finds and prints numbers that appear more than once in a list.
+
+---
+
+## 4️⃣ Food Tuple
+Stores foods in a tuple, shows that tuples can’t be changed, then rewrites the tuple to display an updated menu.
+
+---
+
 ## ⋯– How to Run the Program
 ```bash
 python3 pe03.py
+
+
+
 
 
