@@ -4,7 +4,7 @@ print("1. People list")
 print("2. Animal list ")
 print("3. Duplicate list")
 print("4. Food tuple")
-print("5. ")
+print("5. Sort tuple")
 
 choice = int(input("Enter your choice (1-5): "))
 
@@ -66,6 +66,7 @@ elif choice == 3:
     print("Duplicate numbers:", duplicates)
 
 elif choice == 4:
+#---Food tuple---
 
     foods = ("spring rolls", "chicken feet", "beef", "soup", "fried rice") #Foods in a tuple
     print("Menu:")  # print header once
@@ -81,10 +82,21 @@ elif choice == 4:
         print(food)
 
 
+elif choice == 5:
+    #---Sort Tuple---
+    # Make a list w/ tuples that have two items
+    # Use a sort method to arrange tuples in order based on 2nd item of each tuple 
+    # Store sorted result in a new list 
+    # Print the new sorted list 
+
+    my_list = [('452', 10), ('256', 5), ('100', 20), ('135', 15)] # List of Tuples 
+
+    sorted_list = sorted(my_list, key=lambda x: x[1]) #This line tells Python: when you sort the list, look at the second thing inside each pair and put them in order.
+
+    print(sorted_list)
 
 
 
 
-
-
-    pass
+else:
+    print("Invalid choice! Please enter 1-5.")
